@@ -70,7 +70,7 @@ export default function HomeScreen() {
     if (!searchQuery.trim()) return;
 
     setLoading(true);
-    let url = `http://www.omdbapi.com/?apikey=b45dad4f&s=${searchQuery}`;
+    let url = `https://www.omdbapi.com/?apikey=b45dad4f&s=${searchQuery}`;
     if (selectedType !== 'all') url += `&type=${selectedType}`;
 
     setTimeout(async () => {

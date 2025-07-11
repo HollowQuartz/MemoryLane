@@ -26,7 +26,7 @@ export default function DetailScreen() {
     const fetchDetail = async () => {
       try {
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=b45dad4f&i=${imdbID}&plot=full`
+          `https://www.omdbapi.com/?apikey=b45dad4f&i=${imdbID}&plot=full`
         );
         const data = await res.json();
         setMovie(data);
